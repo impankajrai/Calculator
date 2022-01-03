@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div id="container">
+        <div>
+            <div id="inputContainer">
+                <input type="text" value="" disabled id="uperInput" >
+                <input type="text" value="0" onchange="getInt(this)" disabled id="lowerInput">
+            </div>
+            <table>
+                <tr>
+                    <td><input class="btn" type="button" value="7" onclick="btnClick(this)"></td>
+                    <td><input class="btn" type="button" value="8" onclick="btnClick(this)"></td>
+                    <td><input class="btn" type="button" value="9" onclick="btnClick(this)"></td>
+                    <td><input class="btn" type="button" value="+" onclick="btnClick(this)"></td>
+                </tr>
+                <tr>
+                    <td><input class="btn" type="button" value="4" onclick="btnClick(this)"></td>
+                    <td><input class="btn" type="button" value="5" onclick="btnClick(this)"></td>
+                    <td><input class="btn" type="button" value="6" onclick="btnClick(this)"></td>
+                    <td><input class="btn" type="button" value="-" onclick="btnClick(this)"></td>
+                </tr>
+                <tr>
+                    <td><input class="btn" type="button" value="1" onclick="btnClick(this)"></td>
+                    <td><input class="btn" type="button" value="2" onclick="btnClick(this)"></td>
+                    <td><input class="btn" type="button" value="3" onclick="btnClick(this)"></td>
+                    <td><button class="btn" type="button" value="*" onclick="btnClick(this)">X</button></td>
+                </tr>
+                <tr>
+                    <td><input class="btn" type="button" value="0" onclick="btnClick(this)"></td>
+                    <td><input class="btn" type="button" value="." onclick="btnClick(this)"></td>
+                    <td><input class="btn" type="button" value="=" onclick="btnEqual(this)"></td>
+                    <td><input class="btn" type="button" value="/" onclick="btnClick(this)"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <label>&copy;<span id="year"></span> Pankaj Rai. All Right Reserved</label> 
+    <script src="index.js"></script>
+</body>
+
+</html>
